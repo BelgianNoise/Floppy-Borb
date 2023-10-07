@@ -27,6 +27,7 @@ public class LogicScript : MonoBehaviour
 
     public void gameOver()
     {
+        PlayerPrefs.SetInt("score", score);
         SceneManager.LoadScene("GameOverScene");
     }
 }
